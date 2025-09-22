@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms &amp; Conditions — Mindoku</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="Terms & Conditions for the Mindoku iOS Sudoku app.">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a href="index.html" class="nav__logo" aria-label="Mindoku Home">Mindoku</a>
+      <div class="nav__links">
+        <a href="index.html" class="nav__link">Home</a>
+        <a href="privacy.html" class="nav__link">Privacy Policy</a>
+        <a href="terms.html" class="nav__link" aria-current="page">Terms &amp; Conditions</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container legal">
+    <h1>Terms &amp; Conditions</h1>
+    <p class="muted">Last updated: <span id="updated-date"></span></p>
+
+    <section>
+      <h2>Acceptance of Terms</h2>
+      <p>By downloading, installing, or using Mindoku (the "App"), you agree to be bound by these Terms &amp; Conditions. If you do not agree, do not use the App.</p>
+    </section>
+
+    <section>
+      <h2>License</h2>
+      <p>We grant you a limited, non-exclusive, non-transferable, revocable license to use the App for personal, non-commercial purposes in accordance with these Terms and applicable App Store rules.</p>
+    </section>
+
+    <section>
+      <h2>Intellectual Property</h2>
+      <p>The Mindoku name, logo, design, content, and code are the intellectual property of the developer and are protected by applicable laws. No rights are granted except as expressly set forth in these Terms.</p>
+    </section>
+
+    <section>
+      <h2>Advertisements</h2>
+      <p>The App may display advertisements served by Google AdMob. Your use of the App is also subject to AdMob's privacy practices. See: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a>.</p>
+    </section>
+
+    <section>
+      <h2>In-App Purchases</h2>
+      <p>Purchases and subscriptions are processed via RevenueCat and the App Store in accordance with their terms and policies. Consumable purchases are generally non-refundable except as permitted by App Store rules or required by law. See: <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener noreferrer">RevenueCat Privacy Policy</a>.</p>
+    </section>
+
+    <section>
+      <h2>Limitation of Liability</h2>
+      <p>The App is provided on an "as is" and "as available" basis without warranties of any kind. To the maximum extent permitted by law, the developer shall not be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of data, revenue, or profits, arising from your use of the App.</p>
+    </section>
+
+    <section>
+      <h2>Changes to Terms</h2>
+      <p>We may update these Terms from time to time. The latest version will be posted on this site and will indicate the date of the most recent changes.</p>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>For questions about these Terms, contact us at <a href="mailto:support@mindoku.app">support@mindoku.app</a>.</p>
+    </section>
+
+    <div class="back">
+      <a class="button" href="index.html">Back to Home</a>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Mindoku. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const d = new Date();
+    const y = d.getFullYear();
+    const m = String(d.getMonth() + 1).padStart(2, '0');
+    const day = String(d.getDate()).padStart(2, '0');
+    document.getElementById('updated-date').textContent = `${y}-${m}-${day}`;
+  </script>
+</body>
+</html>
+
+
